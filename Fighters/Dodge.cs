@@ -26,13 +26,17 @@ namespace FightClubConsoleGame.Fighters
             if (chance <= 25)
             {
                 int totalDamage = Damage * 3;
+                Console.BackgroundColor = ConsoleColor.Green;
                 Console.WriteLine("{0} изловчился и ударил второй рукой! " +
                     "Этот удар оказался критическим и " +
                     "нанес {1} урона!", Name, totalDamage);
+                Console.ResetColor();
                 return totalDamage;
             }
+            Console.BackgroundColor = ConsoleColor.Green;
             Console.WriteLine("{0} попытался незаметно ударить второй " +
                 "рукой, но противник это заметил и увернулся!", Name);
+            Console.ResetColor();
             return 0;
         }
     }

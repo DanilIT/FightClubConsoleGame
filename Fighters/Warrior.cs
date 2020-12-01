@@ -23,8 +23,10 @@ namespace FightClubConsoleGame.Fighters
         public override int UseUltimateAbility()
         {
             int totalDamage = Strength * 3;
+            Console.BackgroundColor = ConsoleColor.Red;
             Console.WriteLine("{0} впадает в ярость! Он трижды бьет щитом " +
                 "и наносит {1} урона!", Name, totalDamage);
+            Console.ResetColor();
             return totalDamage; 
         }
     }

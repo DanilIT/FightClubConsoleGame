@@ -23,8 +23,10 @@ namespace FightClubConsoleGame.Fighters
         public override int UseUltimateAbility()
         {
             int totalDamage = random.Next(1, 61);
+            Console.BackgroundColor = ConsoleColor.Blue;
             Console.WriteLine("{0} на секунду концентрируется и пускает" +
                 " в протиника огненый шар на {1} урона", Name, totalDamage);
+            Console.ResetColor();
             return totalDamage;
         }
     }

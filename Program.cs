@@ -18,7 +18,9 @@ namespace FightClubConsoleGame
         static void PrintMenu()
         {
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Игра <<<Бойцовский Клуб>>>\n");
+            Console.ResetColor();
             Console.WriteLine("1 - начать игру");
             Console.WriteLine("2 - правила");
             Console.WriteLine("3 - выход");
@@ -48,7 +50,6 @@ namespace FightClubConsoleGame
         static void PrintRules()
         {
             Console.Clear();
-            Console.WriteLine("***Coming soon***");
             Console.WriteLine(new Warrior());
             Console.WriteLine(new Mage());
             Console.WriteLine(new Dodge());
